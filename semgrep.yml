@@ -1,0 +1,8 @@
+rules:
+- id: python.lang.security.audit.eval
+  patterns:
+    - pattern: eval(...)
+  message: "eval is dangerous"
+  languages: [python]
+  severity: ERROR
+
